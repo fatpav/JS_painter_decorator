@@ -12,6 +12,13 @@ describe('Room', function(){
         const room = new Room(25);
         const actual = room.painted;
         assert.strictEqual(actual, false)
-    })
+    });
+
+    it('room is now painted', function(){
+        const room = new Room(25);
+        room.paintRoom();
+        const actual = room.painted
+        assert.strictEqual(actual, true)
+    });
 
 });
