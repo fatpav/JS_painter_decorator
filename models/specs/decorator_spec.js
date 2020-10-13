@@ -24,4 +24,14 @@ describe('Decorator', function(){
         const cans = decorator.getCans(can1)
         assert.deepStrictEqual(actual, [can1])
     });
+    
+    it('should have many paint cans in stock', function(){
+        const actual = decorator.stock;
+        const canOne = decorator.getCans(can1)
+        const canTwo = decorator.getCans(can2)
+        const canThree = decorator.getCans(can3)
+        const canFour = decorator.getCans(can4)
+        const canFive = decorator.getCans(can5)
+        assert.deepStrictEqual(actual, [can1, can2, can3, can4, can5])
+    });
 })
