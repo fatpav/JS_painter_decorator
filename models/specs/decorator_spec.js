@@ -11,10 +11,16 @@ describe('Decorator', function(){
         can3 = new PaintCan(8);
         can4 = new PaintCan(3);
         can5 = new PaintCan(1);
+        decorator = new Decorator()
     })
 
-    it('should have paint cans in stock', function(){
+    it('should have no paint cans in stock', function(){
         const actual = decorator.stock
-        assert.strictEqual(actual, [can1, can2, can3, can4, can5])
+        assert.deepStrictEqual(actual, []);
     })
+
+    xit('should have paint cans in stock', function(){
+        const actual = decorator.stock;
+        assert.strictEqual(actual, [can1, can2, can3, can4, can5])
+    });
 })
