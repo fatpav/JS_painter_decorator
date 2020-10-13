@@ -1,5 +1,5 @@
-const Paint = function(litres){
+const PaintCan = function(litres){
     this.litres = litres;
 }
 
-module.exports = Paint;
+module.exports = PaintCan;
