@@ -19,8 +19,9 @@ describe('Decorator', function(){
         assert.deepStrictEqual(actual, []);
     })
 
-    xit('should have paint cans in stock', function(){
+    it('should have paint cans in stock', function(){
         const actual = decorator.stock;
-        assert.strictEqual(actual, [can1, can2, can3, can4, can5])
+        const cans = decorator.getCans(can1)
+        assert.deepStrictEqual(actual, [can1])
     });
 })
