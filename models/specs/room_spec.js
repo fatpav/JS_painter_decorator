@@ -6,6 +6,12 @@ describe('Room', function(){
         const room = new Room(25);
         const actual = room.area;
         assert.strictEqual(actual, 25)
+    });
+
+    it('should not be painted', function(){
+        const room = new Room(25);
+        const actual = room.painted;
+        assert.strictEqual(actual, false)
     })
 
 });
